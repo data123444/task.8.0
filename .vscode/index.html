@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header-wraper">
+      <div class="header-block">
+        <a href="">LOGO</a>
+        <nav class="navigation" id="navBar">
+          <ul class="nav-ul" id="ulBar">
+            <li><a href="">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="burger" id="burgerBar">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </div>
+    </header>
+    <video autoplay muted loop id="myVideo">
+      <source src="/rain.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Optional: some overlay text to describe the video -->
+    <div class="content">
+      <h1>Heading</h1>
+      <p>Lorem ipsum...</p>
+      <!-- Use a button to pause/play the video with JavaScript -->
+      <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+    <main>
+      <div class="accordion">
+        <div class="contentBx">
+          <div class="lable">list one</div>
+          <div class="cont">
+            <p>
+              Accordion Build vertically collapsing accordions in combination
+              with our Collapse JavaScript plugin.
+            </p>
+          </div>
+        </div>
+        <div class="contentBx">
+          <div class="lable">list one</div>
+          <div class="cont">
+            <p>
+              Accordion Build vertically collapsing accordions in combination
+              with our Collapse JavaScript plugin.
+            </p>
+          </div>
+        </div>
+        <div class="contentBx">
+          <div class="lable">list three</div>
+          <div class="cont">
+            <p>
+              Accordion Build vertically collapsing accordions in combination
+              with our Collapse JavaScript plugin.
+            </p>
+          </div>
+        </div>
+        <div class="contentBx">
+          <div class="lable">list four</div>
+          <div class="cont">
+            <p>
+              Accordion Build vertically collapsing accordions in combination
+              with our Collapse JavaScript plugin.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      let accordion = document.getElementsByClassName("contentBx");
+
+      for (let i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("active1");
+        });
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
