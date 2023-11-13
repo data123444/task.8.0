@@ -6,6 +6,13 @@ burgerElement.addEventListener("click", function () {
   burgerElement.classList.toggle("activeBurger");
   ulElement.classList.toggle("activeNew");
 });
+let accordion = document.getElementsByClassName("contentBx");
+
+for (let i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function () {
+    this.classList.toggle("active1");
+  });
+}
 document.appendChild(navigationElement);
 document.appendChild(burgerElement);
 document.appendChild(ulElement);
@@ -26,13 +33,6 @@ function myFunction() {
   }
 }
 //acordion
-let accordion = document.getElementsByClassName("contentBx");
-
-for (let i = 0; i < accordion.length; i++) {
-  accordion[i].addEventListener('click', function(){
-    this.classList.toggle('active1');
-  });
-}
 
 
 document.appendChild(navigationElement);
